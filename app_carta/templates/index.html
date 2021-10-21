@@ -1,0 +1,11 @@
+<h1>Descubre el Bug </h1>
+
+<br>
+<a href="{%url 'crear_partida'%}"><button>Crear partida</button></a>
+
+<form action="{%url 'crear_partida'%}" method='post'>
+    {% csrf_token %}
+    <label for="">Ingrese el codigo de partida</label>
+    <input type="text" name="codigo">
+    <button type="submit">validar codigo</button>
+</form>

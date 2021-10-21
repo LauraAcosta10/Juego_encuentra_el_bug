@@ -19,3 +19,8 @@ class Carta_bug(models.Model):
 
     def __str__(self):
         return self.nombre
+
+class Token(models.Model):
+    token = models.CharField(max_length=5)
+    def __str__(self):
+        return self.token
